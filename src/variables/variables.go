@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+var razaGoku = "Saiyajin"
+// razaGoku := "Saiyajin"    !!FUERA DE FUNCIÓN NO
+
 func main(){
 	var numero int
 	numero = 1
@@ -27,4 +30,26 @@ func main(){
 
 	multiplicador := 25
 	fmt.Println(numero * multiplicador)
+	
+
+	/* NOMBRAR VARIABLES 
+	 - Pueden empezar con letras -> Ejemplo: nombre
+	 - Pueden empezar con _   -> Ejemplo: _nombre
+	 - Pueden contener numeros -> Ejemplo: nombre33
+	 - Se suele usar camelCase -> Ejemplo: nombreUsuario
+	 - Es Case Sensitive -> numero != Numero
+	 
+	 Para declarar multiples variables se puede hacer algo como :
+	 var(
+		 prueba = "Goku"
+		 prueba2 = "Vegeta"
+		 variable3 = "Boo"
+	 )
+	 */
+	//Scope
+	imprimir()
+}	
+
+func imprimir(){
+		fmt.Println("La raza de Goku es: " + razaGoku)
 }
